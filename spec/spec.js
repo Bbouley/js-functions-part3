@@ -23,5 +23,26 @@ var code = require('../js/main.js');
     });
   });
 
+  describe('Create an Object', function(){
+    var object1 = {'city': 'Boulder'};
+    var object2 = {'town' : 'Salcombe'};
+
+    it('Takes two arguments and returns them as key value pairs', function(){
+      expect(code.createObject('city', 'Boulder')).toEqual(object1);
+      expect(code.createObject('town', 'Salcombe')).toEqual(object2);
+    });
+  });
+
+  describe('Get the negative index', function(){
+    var letterArray = ['a', 'b', 'c', 'd', 'e'];
+    var letterArray2 = ['f', 'g', 'h', 'i', 'h'];
+
+    it('takes a negative num as argument and returns value at negative index', function(){
+      expect(code.getNegativeIndex(letterArray, -3)).toEqual('c');
+      expect(code.getNegativeIndex(letterArray2, -1)).toEqual('h');
+    });
+  });
+
+
 
 

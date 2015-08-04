@@ -13,6 +13,11 @@ var code = {
     } return num;
   },
 
+  createObject: function(key, pair){
+    var newObject = {};
+    newObject[key] = pair;
+    return newObject;
+  },
 
 
 };
