@@ -19,6 +19,17 @@ var code = {
     return newObject;
   },
 
+  getNegativeIndex: function(array, negativeIndex){
+    var lastIndex = array.length;
+    return array[lastIndex + negativeIndex];
+  },
+
+  removeCharacter: function(string, character){
+    var newString = '';
+    var stringArray = string.split(character).join('');
+    return stringArray;
+  }
+
 
 };
 

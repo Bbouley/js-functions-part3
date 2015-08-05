@@ -43,6 +43,16 @@ var code = require('../js/main.js');
     });
   });
 
+  describe('Remove Character', function(){
+
+    it('takes character as argument and removes it from string passed as argument', function(){
+      expect(code.removeCharacter('javascript', 'a')).toEqual('jvscript');
+      expect(code.removeCharacter('javascript', '1')).toEqual('javascript');
+      expect(code.removeCharacter('12345', '2')).toEqual('1345');
+    });
+
+  });
+
 
 
 
